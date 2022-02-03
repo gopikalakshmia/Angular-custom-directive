@@ -1,3 +1,5 @@
+import { CommondirectiveModule } from './commondirective/commondirective.module';
+import { HomeModule } from './home/home.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -7,12 +9,15 @@ import { RedblackDirective } from './redblack.directive';
 @NgModule({
   declarations: [
     AppComponent,
-    RedblackDirective
+    RedblackDirective,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HomeModule,
+    CommondirectiveModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+
 })
 export class AppModule { }
